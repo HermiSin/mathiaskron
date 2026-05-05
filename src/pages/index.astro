@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const LISTMONK_FORM = 'https://listmonk.app.fuenfgroschenverlag.com/subscription/form?l=2b0a4631-ac2e-4029-9ecb-f048f5ac5d54';
+---
+<BaseLayout>
+  <header class="hero">
+    <div class="fade-in">
+      <p class="eyebrow">Mathias Kron</p>
+      <h1>Die Maske der Normalität</h1>
+      <p class="tagline">
+        Psycho-Thriller aus der Ich-Perspektive — wer einem Mann im Kopf sitzt,<br />
+        der mordet und Familienvater bleibt, lernt seine Fassade besser<br />
+        kennen als seine Familie.
+      </p>
+      <img
+        class="hero-sigill"
+        src="/sigill.png"
+        alt="Mathias Kron — Sigill"
+        width="160"
+        height="160"
+        loading="eager"
+        decoding="async"
+      />
+      <span class="ornament" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="fade-in">
+      <p class="eyebrow">Der Pen</p>
+      <h2>Wir kennen ihn. Wir leben neben ihm. Wir haben ihn nicht gesehen.</h2>
+      <p>
+        Mathias Kron schreibt keinen Detektiv-Thriller. Er schreibt das, was vor
+        dem Detektiv kommt: die Psyche, die Maske, das Doppelleben — aus der
+        Ich-Perspektive desjenigen, den die Polizei dreißig Jahre lang gesucht
+        hat, ohne zu wissen, dass er Kirchenvorsteher ist.
+      </p>
+      <p>
+        Vorbild ist <em>nicht</em> die Tat, sondern ihre <em>Normalität</em>: Der
+        wahre Horror eines BTK-Killers liegt nicht in der Brutalität, sondern in
+        der schockierenden Selbstverständlichkeit der öffentlichen Existenz —
+        Familie, Job, Sonntags Kirche, Mittwochs Mord. Mathias Kron erzählt diese
+        Doppelung von innen, langsam, ohne Voyeurismus, ohne Anti-Helden-Pose.
+        Wir sehen die Welt durch die kalten, objektifizierenden Augen des Täters
+        — und gerade darin liegt die Entmenschlichung als der ultimative Schrecken.
+      </p>
+      <p>
+        Im Schnittpunkt von <em>Patricia Highsmith</em> (Tom Ripley), <em>Thomas
+        Harris</em> (Hannibal), <em>Bret Easton Ellis</em> (American Psycho) und
+        dem deutschen Tatort-Fluchtraum. Recherchiert, kühl, klinisch — und
+        unausweichlich.
+      </p>
+    </section>
+
+    <section class="fade-in">
+      <p class="eyebrow">Die Saga · 52 Hefte · bald erhältlich</p>
+      <h2>Der Nachbar aus Harmony Creek</h2>
+      <blockquote class="heft-card">
+        <span class="heft-meta">Harmony Creek · Heft 1 · Sonderausgabe · Kansas, 1956</span>
+        <strong>Frank Miller</strong>, geboren 1948 in Harmony Creek, Kansas. Eine
+        dieser typischen, gottgefälligen All-American-Gemeinden, in der jeder
+        jeden zu kennen scheint und die dunklen Geheimnisse tief unter der
+        Oberfläche begraben sind. Vater: hart, Koreakriegs-Veteran, Liebe an
+        Bedingungen geknüpft. Mutter: fromm, Kirchengemeinde, blind. Bruder Tom:
+        zwei Jahre jünger, der gute Sohn.
+        <br /><br />
+        Frank ist acht. Er hat noch keinen Namen für den Teil von sich, der
+        Tiere im Schuppen tötet und sich ansieht, was übrig bleibt. Er nennt
+        ihn später <em>Den Schatten</em>.
+        <br /><br />
+        Die erste Sonderausgabe öffnet die Tür in eine Saga über zweiundfünfzig
+        Wochen — vom acht Jahre alten Frank über den Familienvater und Kirchenvorsteher
+        bis zum Mann, den Harmony Creek auf seiner letzten Pressekonferenz noch
+        nicht erkennt.
+        <span class="heft-status">In Vorbereitung</span>
+      </blockquote>
+    </section>
+
+    <section class="fade-in">
+      <p class="eyebrow">Die Architektur</p>
+      <h2>Vier Akte. Zweiundfünfzig Wochen. Eine Maske, die fällt.</h2>
+      <p>
+        <strong>Die Saat</strong> (Hefte 1–10) — Kindheit und Jugend; die ersten
+        Anzeichen, der Schatten lernt sprechen. <strong>Das Erwachen</strong>
+        (Hefte 11–25) — Erwachsenenleben, Familie, Sicherheitsfirma, Kirche;
+        die erste Tat. <strong>Die Herrschaft</strong> (Hefte 26–40) — Doppelleben
+        in voller Blüte, Spiel mit Polizei und Medien, der selbstgewählte Name.
+        <strong>Der Fall</strong> (Hefte 41–52) — Hybris, Fehler, Verhaftung,
+        Verhör, das Zerbrechen der Fassade.
+      </p>
+    </section>
+
+    <section class="fade-in" id="newsletter">
+      <p class="eyebrow">Werde Spiegelleser</p>
+      <h2>Erfahre als Erster, wenn der Schatten zu sprechen beginnt.</h2>
+      <p>
+        Kein Spam, keine Werbung, keine fremden Verteiler. Nur eine Nachricht,
+        wenn die erste Sonderausgabe auf Amazon Kindle Unlimited live geht — und
+        gelegentlich ein kalter Blick hinter die Maske: ein Polaroid aus Harmony
+        Creek, eine Zeitungsmeldung von 1971, ein Brief, den Frank seiner Mutter
+        nie geschickt hat.
+      </p>
+      <div class="newsletter-frame">
+        <iframe
+          src={LISTMONK_FORM}
+          title="Newsletter-Anmeldung Mathias Kron"
+          height="380"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <span class="signet">Mathias Kron</span> ist ein Pen Name von
+      <a href="https://fuenfgroschenverlag.com" target="_blank" rel="noopener">Fünfgroschenverlag</a>.
+    </p>
+    <p>
+      Psycho-Thriller in der Tradition von Patricia Highsmith, Thomas Harris und
+      Bret Easton Ellis — neu erzählt für ein Publikum, das weiß, dass der wahre
+      Horror nicht im Keller wohnt, sondern auf der Kirchenbank in der Reihe
+      vor einem.
+    </p>
+    <p style="margin-top: 1.5rem; font-size: 0.78rem; color: var(--text-muted);">
+      <a href="https://fuenfgroschenverlag.com/impressum">Impressum</a> ·
+      <a href="https://fuenfgroschenverlag.com/datenschutz">Datenschutz</a>
+    </p>
+  </footer>
+</BaseLayout>
